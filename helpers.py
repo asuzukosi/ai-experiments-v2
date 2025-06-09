@@ -8,12 +8,12 @@ def load_env():
 
 def get_openai_api_key():
     load_env()
-    openai_api_key = os.getenv("OPENAI_API_KEY")
+    openai_api_key = os.getenv("OPENAI_KEY")
     return openai_api_key
 
 def get_huggingface_token():
     load_env()
-    huggingface_token = os.getenv("HUGGINGFACE_TOKEN")
+    huggingface_token = os.getenv("HUGGINGFACE_KEY")
     return huggingface_token
 
 def calculate_transport_cost(distance_km: float, order_volume: float) -> float:
