@@ -16,6 +16,11 @@ def get_huggingface_token():
     huggingface_token = os.getenv("HUGGINGFACE_KEY")
     return huggingface_token
 
+def get_tavily_key():
+    load_env()
+    tavily_key = os.getenv("TAVILY_KEY")
+    return tavily_key
+
 def calculate_transport_cost(distance_km: float, order_volume: float) -> float:
     """
     Calculate transportation cost based on distance and order size.
