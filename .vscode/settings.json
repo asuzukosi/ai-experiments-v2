@@ -1,3 +1,6 @@
 {
-    "cmake.ignoreCMakeListsMissing": true
+    "cmake.ignoreCMakeListsMissing": true,
+    "jupyter.allowUnauthorizedRemoteConnection": true,
+    "security.workspace.trust.enabled": false,
+    
 }
