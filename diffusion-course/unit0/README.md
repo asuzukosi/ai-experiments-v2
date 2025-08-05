@@ -1,84 +1,89 @@
-# Hugging Face Diffusion Models Course
+# DreamBooth Hackathon 🏆
 
-In this free course, you will:
-- 👩‍🎓 Study the theory behind diffusion models
-- 🧨 Learn how to generate images and audio with the popular 🤗 Diffusers library
-- 🏋️‍♂️ Train your own diffusion models from scratch
-- 📻 Fine-tune existing diffusion models on new datasets
-- 🗺 Explore conditional generation and guidance
-- 🧑‍🔬 Create your own custom diffusion model pipelines
+📣 **The hackathon is now over and the winners have been announced on Discord. You are still welcome to train models and submit them to the leaderboard, but we won't be offering prizes or certificates at this point in time.**
 
 
-## Prerequisites
-This course requires a good level in Python and a grounding in deep learning and Pytorch.
-If it's not the case yet, you can check these free resources:
-- Python: https://www.udacity.com/course/introduction-to-python--ud1110
-- Intro to Deep Learning with PyTorch: https://www.udacity.com/course/deep-learning-pytorch--ud188
-- PyTorch in 60min: https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html
+Welcome to the DreamBooth Hackathon! This is a community event where you'll **personalise a Stable Diffusion model by fine-tuning it on a handful of your own images.** To do so, you'll use a powerful technique called [_DreamBooth_](https://arxiv.org/abs/2208.12242), which allows one to implant a subject (e.g. your pet or favourite dish) into the output domain of the model such that it can be synthesized with a _unique identifier_ in the prompt.
 
-To upload your models to the Hugging Face Hub, you'll need an account. You can create one for free at the following address: [https://huggingface.co/join](https://huggingface.co/join).
+This competition is composed of 5 _themes_, where each theme will collect models belong to the following categories:
 
-	
-## What is the syllabus?
+* **Animal 🐨:** Use this theme to generate images of your pet or favourite animal hanging out in the Acropolis, swimming, or flying in space.
+* **Science 🔬:** Use this theme to generate cool synthetic images of galaxies, proteins, or any domain of the natural and medical sciences.
+* **Food 🍔:** Use this theme to tune Stable Diffusion on your favourite dish or cuisine.
+* **Landscape 🏔:** Use this theme to generate beautiful landscapes of your favourite mountain, lake, or garden.
+* **Wildcard 🔥:** Use this theme to go wild and create Stable Diffusion models for any category of your choosing!
 
-The course consists in four units. Each unit is made up of a theory section, which also lists resources/papers, and two *notebooks*. More specifically, we have:
-- Unit 1: Introduction to diffusion models  
-Introduction to 🤗 Diffusers and implementation from 0
-- Unit 2: Finetuning and guidance  
-Finetuning a diffusion model on new data and adding guidance.
-- Unit 3: Stable Diffusion  
-Exploring a powerful text-conditioned latent diffusion model
-- Unit 4: Doing more with diffusion  
-Advanced techniques for going further with diffusion
+We'll be **giving out prizes to the top 3 most liked models per theme**, and you're encouraged to submit as many models as you want! 
+
+## Getting started
+
+Follow the steps below to take part in this event:
+
+1. Join the [Hugging Face Discord server](https://huggingface.co/join/discord) and check out the `#dreambooth-hackathon` channel to stay up to date with the event.
+2. Launch and run the [DreamBooth notebook](https://github.com/huggingface/diffusion-models-class/blob/main/hackathon/dreambooth.ipynb) to train your models by clicking on one of the links below. Make sure you select the GPU runtime in each platform to ensure your models train fast!
+
+| Notebook                                     | Colab                                                                                                                                                                                               | Kaggle                                                                                                                                                                                                   | Gradient                                                                                                                                                                               | Studio Lab                                                                                                                                                                                                   |
+|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DreamBooth Training                              | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/diffusion-models-class/blob/main/hackathon/dreambooth.ipynb)              | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/huggingface/diffusion-models-class/blob/main/hackathon/dreambooth.ipynb)              | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/huggingface/diffusion-models-class/blob/main/hackathon/dreambooth.ipynb)              | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/huggingface/diffusion-models-class/blob/main/hackathon/dreambooth.ipynb)              |
+
+**Note 👋:** The DreamBooth notebook uses the [`CompVis/stable-diffusion-v1-4`](https://huggingface.co/CompVis/stable-diffusion-v1-4) checkpoint as the Stable Diffusion model to fine-tune. However, you are totally free to use any Stable Diffusion checkpoint that you want - you'll just have to adjust the code to load the appropriate components and the safety checker (if it exists). Some interesting models to fine-tune include:
+
+* [`runwayml/stable-diffusion-v1-5`](https://huggingface.co/runwayml/stable-diffusion-v1-5)
+* [`prompthero/openjourney`](https://huggingface.co/prompthero/openjourney)
+* [`stabilityai/stable-diffusion-2`](https://huggingface.co/stabilityai/stable-diffusion-2)
+* [`hakurei/waifu-diffusion`](https://huggingface.co/hakurei/waifu-diffusion)
+* [`stabilityai/stable-diffusion-2-1`](https://huggingface.co/stabilityai/stable-diffusion-2-1)
+* [`nitrosocke/elden-ring-diffusion`](https://huggingface.co/nitrosocke/elden-ring-diffusion)
+
+## Evaluation & Leaderboard
+
+To be in the running for the prizes, push one or more DreamBooth models to the Hub with the `dreambooth-hackathon` tag in the model card ([example](https://huggingface.co/lewtun/ccorgi-dog/blob/main/README.md#L9)). This is created automatically by the [DreamBooth notebook](https://github.com/huggingface/diffusion-models-class/blob/main/hackathon/dreambooth.ipynb), but you'll need to add it if you're running your own scripts.
+
+Models are evaluated according to the number of likes they have and you can track your model's ranking on the hackathon's leaderboard:
+
+* [DreamBooth Leaderboard](https://huggingface.co/spaces/dreambooth-hackathon/leaderboard)
+
+## Timeline
+
+* **December 21, 2022** - Start date
+* **December 31, 2022** - Colab Pro registration deadline
+* **January 22, 2023** - Final submissions deadline (closing of the leaderboard)
+* **January 23-27, 2023** - Announce winners of each theme
+
+All deadlines are at 11:59 PM UTC on the corresponding day unless otherwise noted.
+
+## Prizes
+
+We will be awarding 3 prizes per theme, where **winners are determined by the models with the most likes** on the leaderboard:
+
+**1st place winner**
+
+* [Hugging Face Pro subscription](https://huggingface.co/pricing) for 1 year or a $100 voucher for the [Hugging Face merch store](https://store.huggingface.co/)
+
+**2nd place winner**
+
+* A copy of the [_NLP with Transformers_](https://transformersbook.com/) book or a $50 voucher for the [Hugging Face merch store](https://store.huggingface.co/)
+
+**3rd place winner**
+
+* [Hugging Face Pro subscription](https://huggingface.co/pricing) for 1 month or a $15 voucher for the [Hugging Face merch store](https://store.huggingface.co/)
+
+We will also provide a **certificate of completion** to all the participants that submit at least 1 DreamBooth model to the hackathon 🔥.
 
 
+## Compute
 
-## Who are we?
+Google Colab will be sponsoring this event by providing fee Colab Pro credits to 100 participants (selected randomly). We'll be giving out the credits in January 2023, and you have until December 31 to register. To register for these credits, please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeE_js5bxq_a_nFTglbZbQqjd6KNDD9r4YRg42kDFGSb5aoYQ/viewform).
 
-About the authors:
-
-[**Jonathan Whitaker**](https://huggingface.co/johnowhitaker) is a Data Scientist/AI Researcher doing R&D with [answer.ai](https://www.answer.ai/). He likes teaching and making courses. His current focus is on generative AI, flitting between several modalities. You can find more info at: [johnowhitaker.dev](https://johnowhitaker.dev/).
-
-[**Lewis Tunstall**](https://huggingface.co/lewtun) is a machine learning engineer at Hugging Face, focused on developing open-source tools and making them accessible to the wider community. He is also a co-author of the O’Reilly book [Natural Language Processing with Transformers](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/).
-
-
+![](https://lh3.googleusercontent.com/-l6dUgmPOKMM/X7w3nNn3OpI/AAAAAAAALAg/74fTRiPqikMURTD_Dn4PzAVADey2_6lLwCNcBGAsYHQ/s400/colab-logo-128x128.png)
 
 ## FAQ
 
-Here are some answers to frequently asked questions:
+### What data is allowed for fine-tuning?
 
-- **Does taking this course lead to a certification?**
-Currently we do not have any certification for this course. However, we are working on a certification program for the Hugging Face ecosystem -- stay tuned!
+You can use any images that belong to you or for which a permissive license allows for. If you'd like to submit a model trained on faces (e.g. as a Wildcard submission), we recommend using your own likeness. Ideally, use your own data where you can - we'd love to see your pets or favorite local landscape features, and we suspect the likes and prizes will tend to go to those who do something nice and personal 😁.
 
-- **How much time should I spend on this course?**
-Each chapter in this course is designed to be completed in 1 week, with approximately 6-8 hours of work per week. However, you can take as much time as you need to complete the course.
+### Are other fine-tuning techniques like Textual Inversion allowed?
 
-- **Where can I ask a question if I have one?**
-If you have a question about any section of the course, just click on the "*Ask a question*" banner at the top of the page to be automatically redirected to the right section of the [Hugging Face Discord](https://discord.com/invite/JfAtkvEtRb) to ask your question in the channel `#diffusion-models-class`.
+Absolutely! Although this hackathon is focused on DreamBooth, you're welcome (and encouraged) to experiment with other fine-tuning techniques. This also means you can use whatever frameworks, code, or services that help you make delightful models for the community to enjoy 🥰.
 
-- **Where can I get the code for the course?**
-For each section, click on the banner at the top of the page to run the code:
-
-<img src="https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/notebook-buttons.png" alt="Link to the Hugging Face course notebooks" width="75%">
-
-- **How can I contribute to the course?**
-There are many ways to contribute to the course! If you find a typo or a bug, please open an issue on the [`diffusion-models-class`](https://github.com/huggingface/diffusion-models-class) repo. 
-If you would like to help translate the course into your native language, check out the instructions [here](https://github.com/huggingface/diffusion-models-class#translating-the-course-into-your-language).
-
-- **Can I reuse this course?**
-Of course! The course is released under the permissive [Apache 2 license](https://www.apache.org/licenses/LICENSE-2.0.html). This means that you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. If you would like to cite the course, please use the following BibTeX:
-
-```
-@misc{huggingfacecourse,
-  author = {Hugging Face},
-  title = {The Hugging Face Diffusion Models Course, 2022},
-  howpublished = "\url{https://huggingface.co/course}",
-  year = {2022},
-  note = "[Online; accessed <today>]"
-}
-```
-
-
-## Let's get started!
-
-Are you ready to get started? Then go to the first unit to start the course.

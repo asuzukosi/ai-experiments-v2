@@ -1,1 +1,0 @@
-# SageMaker push to hf.co/models example
