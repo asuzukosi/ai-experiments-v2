@@ -5,62 +5,62 @@ This repository is a comprehensive AI Engineering Study Guide containing tools, 
 
 ```mermaid
 graph TB
-    subgraph "AI Learning Journey Repository"
+    subgraph MAIN ["AI Learning Journey Repository"]
         direction TB
         
-        subgraph "Core Infrastructure"
-            HELPERS[helpers.py<br/>- Environment Management<br/>- API Key Handlers<br/>- Cost Analysis Functions]
-            REQ[requirements.txt<br/>- Core Dependencies<br/>- ML/AI Libraries<br/>- Integration Tools]
-            ROOT_NB[Root Notebooks<br/>- Introduction<br/>- Transformers<br/>- Diffusion Models<br/>- Audio Generation<br/>- RAG Systems]
+        subgraph CORE ["Core Infrastructure"]
+            HELPERS["helpers.py<br/>- Environment Management<br/>- API Key Handlers<br/>- Cost Analysis Functions"]
+            REQ["requirements.txt<br/>- Core Dependencies<br/>- ML/AI Libraries<br/>- Integration Tools"]
+            ROOT_NB["Root Notebooks<br/>- Introduction<br/>- Transformers<br/>- Diffusion Models<br/>- Audio Generation<br/>- RAG Systems"]
         end
         
-        subgraph "Deep Learning Foundations"
-            DL120[DL120 (Original)<br/>- VGG16 Implementation<br/>- Basic Architecture Study]
-            DEEPL20[DeepLearning20<br/>- 20 Key Architectures<br/>- 120-Day Journey<br/>- AlexNet, BERT, GAN<br/>- LSTM, ResNet50, ViT<br/>- Comprehensive Study]
+        subgraph DL_FOUND ["Deep Learning Foundations"]
+            DL120["DL120 Original<br/>- VGG16 Implementation<br/>- Basic Architecture Study"]
+            DEEPL20["DeepLearning20<br/>- 20 Key Architectures<br/>- 120-Day Journey<br/>- AlexNet, BERT, GAN<br/>- LSTM, ResNet50, ViT"]
         end
         
-        subgraph "Educational Content"
-            CV_COURSE[Computer Vision Course<br/>- 13 Comprehensive Units<br/>- CNN to Transformers<br/>- Multimodal Models<br/>- Ethics & Bias]
-            COURSES[Specialized Courses<br/>- 3D Generation<br/>- Audio Generation<br/>- Diffusion Models<br/>- Language Models<br/>- Reinforcement Learning<br/>- SmolAgents Course]
-            GEMMA_NB[Gemma Notebooks<br/>- 80+ Implementation Examples<br/>- All Gemma Variants<br/>- PaliGemma Vision<br/>- CodeGemma]
+        subgraph EDU ["Educational Content"]
+            CV_COURSE["Computer Vision Course<br/>- 13 Comprehensive Units<br/>- CNN to Transformers<br/>- Multimodal Models<br/>- Ethics and Bias"]
+            COURSES["Specialized Courses<br/>- 3D Generation<br/>- Audio Generation<br/>- Diffusion Models<br/>- Language Models<br/>- Reinforcement Learning"]
+            GEMMA_NB["Gemma Notebooks<br/>- 80+ Implementation Examples<br/>- All Gemma Variants<br/>- PaliGemma Vision<br/>- CodeGemma"]
         end
         
-        subgraph "Advanced AI Systems"
-            QUANTIZATION[Quantization Examples<br/>- 22+ Practical Notebooks<br/>- GPTQ, GGUF, HQQ<br/>- Multi-modal Quantization<br/>- Production Optimization]
-            FINETUNING[Fine-tuning Suite<br/>- PEFT Methods<br/>- LoRA, DreamBooth<br/>- Stable Diffusion<br/>- Unsloth Integration]
-            INFERENCE_NB[Inference Notebooks<br/>- Chat Templates<br/>- Multi-language Support<br/>- Runtime Optimization<br/>- Monitoring & Serving]
+        subgraph ADV ["Advanced AI Systems"]
+            QUANTIZATION["Quantization Examples<br/>- 22+ Practical Notebooks<br/>- GPTQ, GGUF, HQQ<br/>- Multi-modal Quantization<br/>- Production Optimization"]
+            FINETUNING["Fine-tuning Suite<br/>- PEFT Methods<br/>- LoRA, DreamBooth<br/>- Stable Diffusion<br/>- Unsloth Integration"]
+            INFERENCE_NB["Inference Notebooks<br/>- Chat Templates<br/>- Multi-language Support<br/>- Runtime Optimization<br/>- Monitoring and Serving"]
         end
         
-        subgraph "Real-time AI & Communication"
-            FASTRTC[FastRTC Demos (25+)<br/>- Voice Assistants<br/>- Real-time Communication<br/>- Multi-modal AI<br/>- Patient Intake Systems<br/>- Code Editors]
-            LIVEKIT_NB[LiveKit Notebooks<br/>- Avatar Agents<br/>- Voice Agents<br/>- Real-time Primitives]
+        subgraph RT ["Real-time AI"]
+            FASTRTC["FastRTC Demos 25+<br/>- Voice Assistants<br/>- Real-time Communication<br/>- Multi-modal AI<br/>- Patient Intake Systems"]
+            LIVEKIT_NB["LiveKit Notebooks<br/>- Avatar Agents<br/>- Voice Agents<br/>- Real-time Primitives"]
         end
         
-        subgraph "Agent Frameworks & Workflows"
-            LANGGRAPH_NB[LangGraph Notebooks<br/>- Multi-agent Systems<br/>- RAG Implementations<br/>- Code Assistants<br/>- Customer Support<br/>- Advanced Reasoning]
-            LLAMAINDEX_NB[LlamaIndex Notebooks<br/>- Document Management<br/>- Vector Stores<br/>- Graph RAG<br/>- Workflow Systems]
-            SMOLAGENTS_NB[SmolAgents Course<br/>- Agent Basics<br/>- Tool Integration<br/>- Multi-agent Coordination]
+        subgraph AGENTS ["Agent Frameworks"]
+            LANGGRAPH_NB["LangGraph Notebooks<br/>- Multi-agent Systems<br/>- RAG Implementations<br/>- Code Assistants<br/>- Customer Support"]
+            LLAMAINDEX_NB["LlamaIndex Notebooks<br/>- Document Management<br/>- Vector Stores<br/>- Graph RAG<br/>- Workflow Systems"]
+            SMOLAGENTS_NB["SmolAgents Course<br/>- Agent Basics<br/>- Tool Integration<br/>- Multi-agent Coordination"]
         end
         
-        subgraph "Integration & Tools"
-            EVALUATION[Evaluation Framework<br/>- Agent Comparison<br/>- Code Generation Agents<br/>- RAG Evaluation<br/>- Computer Use Agents]
-            OPENSOURCE_NB[Open Source Notebooks<br/>- RAG Systems<br/>- Fine-tuning Examples<br/>- Enterprise Cookbooks<br/>- Production Patterns]
-            PROMPTS[Prompt Engineering<br/>- Cursor Prompts<br/>- Agent Tools<br/>- Foundation Prompts<br/>- VSCode Integration]
+        subgraph TOOLS ["Integration and Tools"]
+            EVALUATION["Evaluation Framework<br/>- Agent Comparison<br/>- Code Generation Agents<br/>- RAG Evaluation<br/>- Computer Use Agents"]
+            OPENSOURCE_NB["Open Source Notebooks<br/>- RAG Systems<br/>- Fine-tuning Examples<br/>- Enterprise Cookbooks<br/>- Production Patterns"]
+            PROMPTS["Prompt Engineering<br/>- Cursor Prompts<br/>- Agent Tools<br/>- Foundation Prompts<br/>- VSCode Integration"]
         end
         
-        subgraph "Specialized Applications"
-            SIMULATION[Simulation Environment<br/>- MuJoCo Integration<br/>- Isaac Gym<br/>- Robotics Training<br/>- Vision Models]
-            TRANSFORMERS_NB[Transformers Notebooks<br/>- 50+ Model Architectures<br/>- BERT to Flux<br/>- Vision & Language<br/>- Multimodal Models]
-            OLLAMA_EX[Ollama Python Examples<br/>- Local Model Serving<br/>- Structured Outputs<br/>- Tool Integration<br/>- Async Operations]
+        subgraph SPEC ["Specialized Applications"]
+            SIMULATION["Simulation Environment<br/>- MuJoCo Integration<br/>- Isaac Gym<br/>- Robotics Training<br/>- Vision Models"]
+            TRANSFORMERS_NB["Transformers Notebooks<br/>- 50+ Model Architectures<br/>- BERT to Flux<br/>- Vision and Language<br/>- Multimodal Models"]
+            OLLAMA_EX["Ollama Python Examples<br/>- Local Model Serving<br/>- Structured Outputs<br/>- Tool Integration<br/>- Async Operations"]
         end
     end
     
-    subgraph "External Dependencies & APIs"
-        OPENAI[OpenAI API<br/>- GPT Models<br/>- DALL-E<br/>- Embeddings]
-        HF[Hugging Face<br/>- Model Hub<br/>- Transformers<br/>- Datasets]
-        TAVILY[Tavily<br/>- Web Search<br/>- Information Retrieval]
-        E2B_CLOUD[E2B Cloud<br/>- Sandboxed Execution<br/>- Code Interpreter]
-        PHOENIX[Arize Phoenix<br/>- AI Observability<br/>- Performance Monitoring]
+    subgraph EXT ["External Dependencies"]
+        OPENAI["OpenAI API<br/>- GPT Models<br/>- DALL-E<br/>- Embeddings"]
+        HF["Hugging Face<br/>- Model Hub<br/>- Transformers<br/>- Datasets"]
+        TAVILY["Tavily<br/>- Web Search<br/>- Information Retrieval"]
+        E2B_CLOUD["E2B Cloud<br/>- Sandboxed Execution<br/>- Code Interpreter"]
+        PHOENIX["Arize Phoenix<br/>- AI Observability<br/>- Performance Monitoring"]
     end
     
     %% Connections
@@ -69,29 +69,20 @@ graph TB
     HELPERS --> TAVILY
     REQ --> E2B_CLOUD
     REQ --> PHOENIX
-    
-    CREWAI_CORE --> LANGGRAPH_INT
-    E2B --> E2B_CLOUD
     EVALUATION --> PHOENIX
-    VGG16 --> HF
     FINETUNING --> HF
+    QUANTIZATION --> HF
     
-    classDef coreInfra fill:#e1f5fe
-    classDef aiAgents fill:#f3e5f5
-    classDef education fill:#e8f5e8
-    classDef advanced fill:#fff3e0
-    classDef integration fill:#fce4ec
-    classDef tools fill:#f1f8e9
-    classDef memory fill:#e0f2f1
-    classDef external fill:#fafafa
+    classDef coreInfra fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef education fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    classDef advanced fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    classDef integration fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef external fill:#fafafa,stroke:#424242,stroke-width:2px
     
     class HELPERS,REQ,ROOT_NB coreInfra
-    class CREWAI_CORE,CREWAI_APPS,CREWAI_FLOWS,LANGGRAPH_INT aiAgents
-    class COURSES,TUTORIALS education
-    class INFERENCE,FINETUNING,EVALUATION advanced
-    class E2B,LIVEKIT,FASTRTC integration
-    class COMFYUI,N8N,DISTRIBUTED tools
-    class MEMGPT,LLAMAINDEX,LANGGRAPH_EX memory
+    class CV_COURSE,COURSES,GEMMA_NB,DL120,DEEPL20 education
+    class QUANTIZATION,FINETUNING,INFERENCE_NB advanced
+    class FASTRTC,LIVEKIT_NB,EVALUATION,OPENSOURCE_NB,PROMPTS integration
     class OPENAI,HF,TAVILY,E2B_CLOUD,PHOENIX external
 ```
 
