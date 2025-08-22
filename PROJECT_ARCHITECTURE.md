@@ -14,46 +14,44 @@ graph TB
             ROOT_NB[Root Notebooks<br/>- Introduction<br/>- Transformers<br/>- Diffusion Models<br/>- Audio Generation<br/>- RAG Systems]
         end
         
-        subgraph "Deep Learning Foundations (dl120/)"
-            DL120_NB[Core Notebooks<br/>- ImageNet Implementation<br/>- LeNet-5 Architecture<br/>- GPU Validation]
-            VGG16[VGG16 Implementation<br/>- Model Architecture<br/>- Training Pipeline<br/>- CLI Interface<br/>- Metrics Tracking]
-            DL120_SCRIPTS[Python Scripts<br/>- ImageNet Processing<br/>- Data Downloads]
-        end
-        
-        subgraph "AI Agents & Workflows (crewai-examples/)"
-            CREWAI_CORE[CrewAI Examples<br/>- Multi-Agent Systems<br/>- Workflow Automation<br/>- Task Coordination]
-            CREWAI_APPS[Business Applications<br/>- Email Auto-Responder<br/>- Marketing Strategy<br/>- Job Posting<br/>- Stock Analysis<br/>- Trip Planning]
-            CREWAI_FLOWS[Advanced Flows<br/>- Self-Evaluation Loops<br/>- Meeting Assistants<br/>- Lead Scoring]
-            LANGGRAPH_INT[LangGraph Integration<br/>- State Management<br/>- Graph-based Workflows<br/>- Node Orchestration]
+        subgraph "Deep Learning Foundations"
+            DL120[DL120 (Original)<br/>- VGG16 Implementation<br/>- Basic Architecture Study]
+            DEEPL20[DeepLearning20<br/>- 20 Key Architectures<br/>- 120-Day Journey<br/>- AlexNet, BERT, GAN<br/>- LSTM, ResNet50, ViT<br/>- Comprehensive Study]
         end
         
         subgraph "Educational Content"
-            COURSES[Course Materials<br/>- Diffusion Course<br/>- 3D Generation<br/>- Audio Generation<br/>- HuggingFace Notebooks<br/>- LLM Course<br/>- MCP Course]
-            TUTORIALS[Interactive Tutorials<br/>- 500+ Jupyter Notebooks<br/>- Code Examples<br/>- Hands-on Exercises]
+            CV_COURSE[Computer Vision Course<br/>- 13 Comprehensive Units<br/>- CNN to Transformers<br/>- Multimodal Models<br/>- Ethics & Bias]
+            COURSES[Specialized Courses<br/>- 3D Generation<br/>- Audio Generation<br/>- Diffusion Models<br/>- Language Models<br/>- Reinforcement Learning<br/>- SmolAgents Course]
+            GEMMA_NB[Gemma Notebooks<br/>- 80+ Implementation Examples<br/>- All Gemma Variants<br/>- PaliGemma Vision<br/>- CodeGemma]
         end
         
         subgraph "Advanced AI Systems"
-            INFERENCE[Inference Examples<br/>- Model Serving<br/>- Optimization<br/>- Performance Tuning]
-            FINETUNING[Fine-tuning Examples<br/>- PEFT Methods<br/>- LoRA Training<br/>- DreamBooth<br/>- Quantization]
-            EVALUATION[Evaluation Framework<br/>- Agent Testing<br/>- Performance Metrics<br/>- Benchmarking]
+            QUANTIZATION[Quantization Examples<br/>- 22+ Practical Notebooks<br/>- GPTQ, GGUF, HQQ<br/>- Multi-modal Quantization<br/>- Production Optimization]
+            FINETUNING[Fine-tuning Suite<br/>- PEFT Methods<br/>- LoRA, DreamBooth<br/>- Stable Diffusion<br/>- Unsloth Integration]
+            INFERENCE_NB[Inference Notebooks<br/>- Chat Templates<br/>- Multi-language Support<br/>- Runtime Optimization<br/>- Monitoring & Serving]
         end
         
-        subgraph "Platform Integrations"
-            E2B[E2B Code Interpreter<br/>- Sandboxed Execution<br/>- Multiple AI Models<br/>- Real-time Coding]
-            LIVEKIT[LiveKit Demos<br/>- Real-time AI<br/>- Voice/Video<br/>- Interactive Systems]
-            FASTRTC[FastRTC Demos<br/>- Real-time Communication<br/>- Audio/Video AI<br/>- Live Interactions]
+        subgraph "Real-time AI & Communication"
+            FASTRTC[FastRTC Demos (25+)<br/>- Voice Assistants<br/>- Real-time Communication<br/>- Multi-modal AI<br/>- Patient Intake Systems<br/>- Code Editors]
+            LIVEKIT_NB[LiveKit Notebooks<br/>- Avatar Agents<br/>- Voice Agents<br/>- Real-time Primitives]
         end
         
-        subgraph "Development Tools"
-            COMFYUI[ComfyUI Templates<br/>- 300+ Workflow Templates<br/>- Image Generation<br/>- Video Processing<br/>- API Integrations]
-            N8N[N8N Workflows<br/>- 400+ Automation Workflows<br/>- API Orchestration<br/>- Business Process Automation]
-            DISTRIBUTED[Distributed AI<br/>- Federated Learning<br/>- Multi-device Training<br/>- Edge Deployment]
+        subgraph "Agent Frameworks & Workflows"
+            LANGGRAPH_NB[LangGraph Notebooks<br/>- Multi-agent Systems<br/>- RAG Implementations<br/>- Code Assistants<br/>- Customer Support<br/>- Advanced Reasoning]
+            LLAMAINDEX_NB[LlamaIndex Notebooks<br/>- Document Management<br/>- Vector Stores<br/>- Graph RAG<br/>- Workflow Systems]
+            SMOLAGENTS_NB[SmolAgents Course<br/>- Agent Basics<br/>- Tool Integration<br/>- Multi-agent Coordination]
         end
         
-        subgraph "Memory & State Management"
-            MEMGPT[MemGPT Notebooks<br/>- Agent Memory<br/>- Long-term Context<br/>- Conversational AI]
-            LLAMAINDEX[LlamaIndex Examples<br/>- Document Management<br/>- Vector Stores<br/>- Knowledge Graphs]
-            LANGGRAPH_EX[LangGraph Examples<br/>- State Persistence<br/>- Multi-agent Coordination<br/>- Complex Workflows]
+        subgraph "Integration & Tools"
+            EVALUATION[Evaluation Framework<br/>- Agent Comparison<br/>- Code Generation Agents<br/>- RAG Evaluation<br/>- Computer Use Agents]
+            OPENSOURCE_NB[Open Source Notebooks<br/>- RAG Systems<br/>- Fine-tuning Examples<br/>- Enterprise Cookbooks<br/>- Production Patterns]
+            PROMPTS[Prompt Engineering<br/>- Cursor Prompts<br/>- Agent Tools<br/>- Foundation Prompts<br/>- VSCode Integration]
+        end
+        
+        subgraph "Specialized Applications"
+            SIMULATION[Simulation Environment<br/>- MuJoCo Integration<br/>- Isaac Gym<br/>- Robotics Training<br/>- Vision Models]
+            TRANSFORMERS_NB[Transformers Notebooks<br/>- 50+ Model Architectures<br/>- BERT to Flux<br/>- Vision & Language<br/>- Multimodal Models]
+            OLLAMA_EX[Ollama Python Examples<br/>- Local Model Serving<br/>- Structured Outputs<br/>- Tool Integration<br/>- Async Operations]
         end
     end
     
@@ -104,65 +102,108 @@ graph TB
 - **requirements.txt**: Comprehensive dependency management with version pinning
 - **Root Notebooks**: Foundation-level educational content covering key AI concepts
 
-### 2. Deep Learning Foundations (dl120/)
-**Technical Implementation:**
-- Complete VGG16 implementation with modular architecture
-- Training pipeline with checkpointing and early stopping
-- CLI interface for model training and inference
-- Comprehensive metrics tracking and evaluation
-- GPU optimization and validation utilities
+### 2. Deep Learning Foundations
+**DL120 (Original):**
+- VGG16 implementation with basic architecture study
+- Single model deep-dive approach
 
-**Key Files:**
-- `dl120/vgg16/models/vgg16.py`: Core model architecture
-- `dl120/vgg16/training/trainer.py`: Training orchestration
-- `dl120/vgg16/cli/main.py`: Command-line interface
+**DeepLearning20 (New):**
+- **120-Day Learning Journey**: Comprehensive study of 20 key architectures
+- **Complete Architecture Coverage**: AlexNet, BERT, DDPM, GAN, GPT2, LSTM, ResNet50, ViT, YOLO, etc.
+- **Modular Implementation**: Each architecture with dedicated structure
+- **Technical Implementation**: Training pipelines, CLI interfaces, metrics tracking
+- **Key Files**: `deeplearning20/AlexNet/`, `deeplearning20/BERT/`, etc.
 
-### 3. AI Agents & Workflows (crewai-examples/)
-**Architecture:**
-- **Multi-Agent Systems**: Coordinated agent workflows for complex tasks
-- **Business Applications**: Production-ready examples for real-world scenarios
-- **LangGraph Integration**: State-based workflow management
-- **Configuration Management**: YAML-based agent and task definitions
+### 3. Educational Content Ecosystem
+**Computer Vision Course (13 Units):**
+- Complete progression from fundamentals to ethics
+- CNN architectures to Vision Transformers
+- Multimodal models and generative systems
+- 3D vision and model optimization
 
-**Technical Features:**
-- Agent role specialization and task delegation
-- Inter-agent communication protocols
-- Workflow state persistence
-- Error handling and retry mechanisms
+**Specialized Courses:**
+- 3D Generation with hands-on exercises
+- Audio Generation with pipeline tutorials
+- Diffusion Models with custom implementations
+- Language Models with comprehensive coverage
+- Reinforcement Learning fundamentals
+- SmolAgents framework training
 
-### 4. Platform Integrations
-**E2B Integration** (20+ examples):
-- Sandboxed code execution environment
-- Support for multiple AI models (OpenAI, Claude, Groq, etc.)
-- Real-time code interpretation and visualization
+**Gemma Ecosystem (80+ Notebooks):**
+- Complete Gemma family coverage
+- PaliGemma vision applications
+- CodeGemma development tools
+- Fine-tuning and deployment examples
 
-**LiveKit/FastRTC** (30+ demos):
-- Real-time voice and video AI applications
-- Low-latency communication systems
-- Multi-modal AI interactions
+### 4. Advanced AI Systems
+**Quantization Suite (22+ Notebooks):**
+- **Production-Ready**: GPTQ, GGUF, HQQ implementations
+- **Multi-modal Support**: Audio (Whisper), Vision (Llava, Phi-3), Text models
+- **Performance Optimization**: Memory reduction, speed improvements
+- **Deployment Focus**: Serving frameworks (vLLM, SGLang)
 
-### 5. Advanced AI Systems
-**Fine-tuning Framework** (100+ examples):
-- PEFT methods (LoRA, QLoRA, AdaLoRA)
-- DreamBooth implementations
-- Quantization techniques
-- Multi-adapter inference
+**Fine-tuning Framework:**
+- PEFT methods (LoRA, QLoRA, AdaLoRA, DoRA)
+- Stable Diffusion fine-tuning
+- Unsloth integration for efficiency
+- Multi-adapter inference patterns
 
-**Evaluation System**:
-- Comprehensive agent evaluation framework
-- Performance benchmarking tools
-- Observability and monitoring integration
+**Inference Optimization:**
+- Chat template systems
+- Multi-language runtime support
+- Monitoring and observability
+- Production serving patterns
 
-### 6. Development Tools
-**ComfyUI Templates** (300+ workflows):
-- Complete image/video generation pipelines
-- API integrations for major AI services
-- Production-ready workflow templates
+### 5. Real-time AI & Communication
+**FastRTC Demos (25+ Applications):**
+- Voice assistants with multiple providers (OpenAI, Claude, Gemini)
+- Real-time transcription and translation
+- Multi-modal interactions (audio + video)
+- Specialized applications (patient intake, code editing)
+- WebRTC vs WebSocket comparisons
 
-**N8N Automations** (400+ workflows):
-- Business process automation
-- API orchestration and integration
-- Multi-service workflow coordination
+**LiveKit Integration:**
+- Avatar-based interactions
+- Voice agent primitives
+- Real-time communication protocols
+
+### 6. Agent Frameworks & Workflows
+**LangGraph Notebooks:**
+- Multi-agent coordination systems
+- RAG implementations with state management
+- Code assistant workflows
+- Customer support automation
+- Advanced reasoning patterns (ReflExion, LATS)
+
+**LlamaIndex Suite:**
+- Document management systems
+- Vector store integrations
+- Graph RAG implementations
+- Workflow orchestration
+
+**SmolAgents Course:**
+- Agent fundamentals and best practices
+- Tool integration patterns
+- Multi-agent coordination strategies
+
+### 7. Integration & Development Tools
+**Evaluation Framework:**
+- Agent performance comparison
+- Code generation benchmarking
+- RAG system evaluation
+- Computer use agent testing
+
+**Open Source Notebooks:**
+- Enterprise cookbook patterns
+- RAG system implementations
+- Fine-tuning production examples
+- MLOps integration patterns
+
+**Prompt Engineering Suite:**
+- Cursor IDE integration
+- Agent tool configurations
+- Foundation model prompts
+- VSCode development patterns
 
 ## Data Flow Architecture
 
@@ -219,11 +260,23 @@ flowchart LR
 - **Diffusers**: Diffusion model implementations
 - **PEFT**: Parameter-efficient fine-tuning
 - **Datasets**: Data loading and processing
+- **Quantization Tools**: GPTQ, GGUF, HQQ, vLLM, SGLang
+- **Fine-tuning Frameworks**: Unsloth, TRL, Axolotl
 
 ### Visualization & Analysis
 - **Plotly**: Interactive visualizations
 - **Pandas/NumPy**: Data manipulation and analysis
 - **Jupyter**: Interactive development environment
+
+### Real-time & Communication
+- **FastRTC**: Real-time communication protocols
+- **LiveKit**: Voice and video AI frameworks
+- **WebRTC/WebSocket**: Communication infrastructure
+
+### Development & Integration
+- **LangGraph**: Workflow orchestration and state management
+- **LlamaIndex**: Document processing and RAG systems
+- **Ollama**: Local model serving and management
 
 ## Scalability & Performance
 
@@ -254,4 +307,38 @@ flowchart LR
 - Comprehensive error handling
 - Extensive documentation and examples
 
-This architecture provides a comprehensive foundation for AI engineering education, research, and production deployment, with particular strengths in agent-based systems, distributed training, and real-time AI applications.
+## Major Updates and Additions
+
+### Removed Components
+- **crewai-examples/**: Multi-agent CrewAI examples (previously 25+ examples)
+- **comfyui-templates/**: Image/video generation workflows (previously 300+ templates)
+- **n8n-workflows/**: Business process automation (previously 400+ workflows)
+- **huggingface-notebooks/**: Core HF educational content
+- **distributed-ai-examples/**: Federated learning examples
+- **memgpt-notebooks/**: Agent memory management
+- **livekit-examples/**: Real-time AI demos
+
+### New/Expanded Components
+- **deeplearning20/**: Complete 20-architecture study program
+- **quantization-examples/**: Production-ready quantization suite (22+ notebooks)
+- **gemma-notebooks/**: Comprehensive Gemma family coverage (80+ notebooks)
+- **cv-course/**: Complete 13-unit computer vision curriculum
+- **inference-notebooks/**: Advanced inference optimization
+- **langgraph-notebooks/**: Multi-agent workflow systems
+- **llamaindex-notebooks/**: Document processing and RAG
+- **smolagents-course/**: Agent framework training
+- **opensource-ai-notebooks/**: Enterprise patterns and cookbooks
+- **ollama-python-examples/**: Local model serving
+- **simulation/**: Robotics and training environments
+- **transformers-notebooks/**: 50+ transformer architectures
+- **promts-examples/**: IDE integration and prompt engineering
+
+### Architectural Evolution
+This updated architecture represents a significant evolution toward:
+- **Production-Ready Systems**: Focus on quantization, inference optimization, and deployment
+- **Educational Depth**: Comprehensive courses replacing scattered examples  
+- **Agent Framework Integration**: Multiple agent systems (LangGraph, LlamaIndex, SmolAgents)
+- **Real-world Applications**: Enterprise patterns, simulation environments, and practical implementations
+- **Local-First Approach**: Ollama integration, local serving, and privacy-focused solutions
+
+This architecture now provides a more structured, production-oriented foundation for AI engineering education, research, and deployment, with particular strengths in agent-based systems, quantization optimization, and comprehensive educational pathways.
