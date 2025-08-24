@@ -32,7 +32,7 @@ def parse_args():
 class InteractiveGameInference:
     def __init__(self, args):
         self.args = args
-        self.device = torch.device("cuda")
+        self.device = torch.device("cuda:1")
         self.weight_dtype = torch.bfloat16
 
         self._init_config()
@@ -65,6 +65,8 @@ class InteractiveGameInference:
         pipeline = CausalInferenceStreamingPipeline(self.config, generator=generator, vae_decoder=current_vae_decoder)
         if self.args.checkpoint_path:
             print("Loading Pretrained Model...")
+            print(self.args.checkpoint_path)
+            print(os.path.exists(self.args.checkpoint_path))
             state_dict = load_file(self.args.checkpoint_path)
             pipeline.generator.load_state_dict(state_dict)
 
