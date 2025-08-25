@@ -118,6 +118,10 @@ def draw_keys_on_frame(frame, keys, key_size=(80, 50), spacing=20, bottom_margin
 
 # 在帧上叠加鼠标图案
 def overlay_icon(frame, icon, position, scale=1.0, rotation=0):
+    if not icon:
+        return
+    if not frame:
+        return
     x, y = position
     h, w, _ = icon.shape
 

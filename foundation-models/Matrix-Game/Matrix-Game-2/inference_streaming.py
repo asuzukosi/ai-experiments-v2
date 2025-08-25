@@ -32,7 +32,7 @@ def parse_args():
 class InteractiveGameInference:
     def __init__(self, args):
         self.args = args
-        self.device = torch.device("cuda:1")
+        self.device = torch.device("cuda:0")
         self.weight_dtype = torch.bfloat16
 
         self._init_config()
