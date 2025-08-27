@@ -2,3 +2,4 @@
 .conda*
 *dataset*
 **dataset/**
+__pycache__/
