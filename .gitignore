@@ -3,5 +3,5 @@
 *dataset*
 **dataset/**
 __pycache__/
-venv/
+*venv/
 *.pt
